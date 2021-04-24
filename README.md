@@ -1,10 +1,8 @@
-# NotificacoesEmDelphi
+# Delphi Notification - Notificacoes em Delphi
 
-### Resolvi criar esse projeto, pois percebi que os sistemas desktops não emitem aqueles balõezinhos como na web em resposta a alguma ação executada, por exemplo: Cadastrado com sucesso, Sem conexão,..., e tudo mais. Se quiser contribuir com esse projeto fique a vontade hehe.
+### Resolvi criar esse projeto, pois percebi que os sistemas desktops não emitem aqueles balõezinhos como na web. No sistema da empresa onde trabalho atualmente não tem exibição dessas mensagens. Podemos utilizar essas notificações em várias situações, um exemplo é em resposta a alguma ação executada: Cadastrado com sucesso, Sem conexão,..., e tudo mais. Se quiser contribuir com esse projeto fique a vontade hehe.
 
-<h3 align="center">
-  <img alt="NotificacoesEmDelphi" title="NotificacoesEmDelphi" src="./resources/exemplo.png" />
-</h3>
+![delphi-notification](https://github.com/JosimarPintoCamilo/delphi-notification/blob/master/resources/exemplo.gif)
 
 #### Requisitos:
 - Não tem dependências, só o Delphi é suficiente para rodar o projeto, seja livre :)
@@ -14,7 +12,7 @@
 Instancie uma fábrica de notificações:
 ```
 FNotificacaoFactory: INotificacaoFactory;
-FNotificacaoFactory := TNotificacaoFactory.New;
+FNotificacaoFactory := TNotificacaoFactory.Create;
 ```
 
 Crie a notificação que quiser :)
@@ -42,8 +40,15 @@ FNotificacaoFactory.Erro('Deu Erro!');
 #### Se preferir personalise o seu balão utilizando a classe TNotificacao encadeando os métodos
 
 ```
-TNotificacao.New.Mensagem(Mensagem).Icone(CODIGO_ICONE).Cor(CODIGO_COR).Exibir;
+FNotificacao: INotificacao;
+FNotificacao := TNotificacao.Create(nil);
+FNotificacao.Mensagem(Mensagem).Icone(CODIGO_ICONE).Cor(CODIGO_COR).Exibir;
 ```
 
-O código do ícone você vai pegar no site [Font Awesome](https://fontawesome.com/)<br/>
-A cor é do tipo TColor como: COR_PRETO = $00121212;
+### Sobre os ícones
+
+O ícone da notificação pode ser um de sua preferência. O código do ícone você vai pegar no site [Font Awesome](https://fontawesome.com/). Vai precisar adicionar um $ como esse exemplo ICONE_ERRO = $F00D;<br/>
+
+### Sobre a cor
+
+As cores das notificações podem ser personalizadas. Vale lembrar que o Delphi utiliza o padrão de cores BGR e não RGB como estamos acostumados. Logo, lembre-se de fazer essa conversão e colocar o $ como: COR_PRETO = $00121212.
