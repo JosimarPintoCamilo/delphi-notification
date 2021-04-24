@@ -1,0 +1,12 @@
+{
+  "name": "delphi-notification",
+  "version": "1.0.0",
+  "description": "Já pensou que bacana seria mostrar notificações como as que vemos na web em seu sistema desktop em Delphi? Ficou bem bacana.",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": [],
+  "author": "Josimar Pinto Camilo",
+  "license": "MIT"
+}

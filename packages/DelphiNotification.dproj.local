@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/24 08:47:17.000.197,C:\Users\josim\Documents\estudos\github\delphi-notification\packages\NotificacoesEmDelphi.dproj=C:\Users\josim\Documents\estudos\github\delphi-notification\packages\DelphiNotification.dproj</Transaction>
+    <Transaction>2021/04/24 08:49:11.000.967,C:\Users\josim\Documents\estudos\github\delphi-notification\src\viewPrinciapal.pas=C:\Users\josim\Documents\estudos\github\delphi-notification\src\Exemplo.View.pas</Transaction>
+    <Transaction>2021/04/24 08:49:11.000.967,C:\Users\josim\Documents\estudos\github\delphi-notification\src\viewPrinciapal.dfm=C:\Users\josim\Documents\estudos\github\delphi-notification\src\Exemplo.View.dfm</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\delphi-notification"/>
+    <File Path="..\src"/>
+    <File Path="..\src\notificacoes"/>
+    <File Path="..\src\notificacoes\impl"/>
+    <File Path="..\src\notificacoes\impl\Delphi.Notificacoes.Impl.Notificacao.pas"/>
+    <File Path="..\src\notificacoes\impl\Delphi.Notificacoes.Impl.Notificacao.dfm"/>
+    <File Path="..\src\notificacoes\impl\Delphi.Notificacoes.Impl.NotificacaoFactory.pas"/>
+    <File Path="..\src\notificacoes\Delphi.Notificacoes.Notificacao.pas"/>
+    <File Path="..\src\notificacoes\Delphi.Notificacoes.NotificacaoFactory.pas"/>
+    <File Path="..\src\Exemplo.View.pas"/>
+    <File Path="..\src\Exemplo.View.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
